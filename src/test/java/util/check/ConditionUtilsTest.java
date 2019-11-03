@@ -1,4 +1,4 @@
-package util.boole.check;
+package util.check;
 
 import org.junit.Test;
 
