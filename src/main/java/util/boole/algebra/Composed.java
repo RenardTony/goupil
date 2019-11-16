@@ -1,6 +1,6 @@
 package util.boole.algebra;
 
-import util.boole.algebra.enums.Operation;
+import util.boole.enums.Operation;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ class Composed {
     }
 
     static Composed of(Unary value1, Unary value2) {
-        Composed composed = new Composed(new ArrayList<Unary>(2));
+        Composed composed = new Composed(new ArrayList<>(2));
         composed.getValues().add(value1);
         composed.getValues().add(value2);
         return composed;
@@ -59,7 +59,7 @@ class Composed {
         return apply(Operation.INH);
     }
 
-    public boolean apply(Operation operation) {
+    private boolean apply(Operation operation) {
         boolean tamp = this.values.get(0).is();
 
         for (int i = 1 ; i < this.values.size() ; i++) {

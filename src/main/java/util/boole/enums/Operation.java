@@ -1,4 +1,4 @@
-package util.boole.algebra.enums;
+package util.boole.enums;
 
 public enum Operation {
     AND,
@@ -8,5 +8,5 @@ public enum Operation {
     XOR,
     XNOR,
     IMP,
-    INH;
+    INH
 }

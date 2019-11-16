@@ -1,6 +1,6 @@
 package util.boole.algebra;
 
-import util.boole.algebra.enums.Operation;
+import util.boole.enums.Operation;
 
 public final class Logic {
 
